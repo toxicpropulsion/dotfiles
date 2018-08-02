@@ -21,25 +21,24 @@ Xft.rgba:       rgb
 !--------------------------------------------------
 
 URxvt*depth:                        32
-URxvt*internalBorder:               3
+URxvt*internalBorder:               0
 URxvt*dynamicColors:                on
 URxvt*urgentOnBell:                 true
-URxvt*borderLess:                   false
+URxvt*borderLess:                   true
 URxvt*scrollBar:                    false
 URxvt*cursorBlink:                  true
-URxvt*cursorUnderline:              true
+URxvt*cursorUnderline:              false
 URxvt*cursorColor:                  #737077
 URxvt*scrollColor:                  #151515
 URxvt*underlineURLs:                true
+URxvt.letterSpace:                  -1
 
-URxvt*font:     -*-dina-medium-r-*-*-*-90-*-*-*-*-*-*
-URxvt*italic:   -*-dina-medium-*-*-*-*-90-*-*-*-*-*-*
-URxvt*boldFont: -*-dina-bold-r-*-*-*-90-*-*-*-*-*-*
+URxvt.font: xft:Liberation Mono:size=14
 
 URxvt.colorIT:                      #b291af
 URxvt.colorBD:                      #6f6776
 URxvt.colorUL:                      #e9cfd3
-
+URxvt*color12:                      rgb:5c/5c/ff
 
 
 !--------------------------------------------------
@@ -57,8 +56,7 @@ URxvt.colorUL:                      #e9cfd3
 
 ! red
 *color1:  #cc241d
-*color9:  #fb4934
-
+*color9:  #fb4934 
 ! green
 *color2:  #98971a
 *color10: #b8bb26
