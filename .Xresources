@@ -20,11 +20,12 @@ Xft.rgba:       rgb
 !                       
 !--------------------------------------------------
 
-URxvt*depth:                        32
+!URxvt*depth:                        32
 URxvt*internalBorder:               0
 URxvt*dynamicColors:                on
-URxvt*urgentOnBell:                 true
-URxvt*borderLess:                   true
+!URxvt*urgentOnBell:                 true
+! do not work on i3 with borderless true
+!URxvt*borderLess:                   true
 URxvt*scrollBar:                    false
 URxvt*cursorBlink:                  true
 URxvt*cursorUnderline:              false
