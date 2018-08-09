@@ -20,7 +20,7 @@ Xft.rgba:       rgb
 !                       
 !--------------------------------------------------
 
-!URxvt*depth:                        32
+URxvt*depth:                        32
 URxvt*internalBorder:               0
 URxvt*dynamicColors:                on
 !URxvt*urgentOnBell:                 true
@@ -48,16 +48,20 @@ URxvt*color12:                      rgb:5c/5c/ff
 !                       
 !--------------------------------------------------
 
-*background: #1d2021
+*background: #282828 
 *foreground: #ebdbb2
 
+!#1d2021
+!#282828 
+
 ! black & gray
-*color0:  #282828
+*color0:  #1d2021
 *color8:  #928374
 
 ! red
 *color1:  #cc241d
 *color9:  #fb4934 
+
 ! green
 *color2:  #98971a
 *color10: #b8bb26
