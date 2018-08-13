@@ -98,10 +98,10 @@ bindsym $mod+a focus parent
 
 # terminal
 set $workspace1 "1:"
-# code
-set $workspace2 "2:"
 # browser
-set $workspace3 "3:"
+set $workspace2 "2:"
+# code
+set $workspace3 "3:"
 # someshit
 set $workspace4 "4:"
 # someshit-2
@@ -170,7 +170,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         position top
-        status_command i3status
+        status_command i3blocks -c ~/.config/i3/i3blocks.conf
         strip_workspace_numbers yes
 
         font pango:Fira Mono 12
