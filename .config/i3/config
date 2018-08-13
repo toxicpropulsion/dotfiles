@@ -96,13 +96,20 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-set $workspace1 "1:terminal"
-set $workspace2 "2:editor"
-set $workspace3 "3:browser"
-set $workspace4 "4:someshit"
-set $workspace5 "5:someshit2"
-set $workspace8 "8:media"
-set $workspace9 "9:chats"
+# terminal
+set $workspace1 "1:"
+# code
+set $workspace2 "2:"
+# browser
+set $workspace3 "3:"
+# someshit
+set $workspace4 "4:"
+# someshit-2
+set $workspace5 "5:"
+# media
+set $workspace8 "8:"
+# chat
+set $workspace9 "9:"
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -141,10 +148,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym j resize shrink width 10 px or 1 ppt
+        bindsym k resize grow height 10 px or 1 ppt
+        bindsym l resize shrink height 10 px or 1 ppt
+        bindsym semicolon resize grow width 10 px or 1 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -166,10 +173,16 @@ bar {
         status_command i3status
         strip_workspace_numbers yes
 
-        font pango:Fira Mono 10
+        font pango:Fira Mono 12
 
         colors {
                 background #282828
+
+                # <colorclass>       <border>   <background>   <text>
+                focused_workspace    #282828      #282828      #d79921
+                active_workspace     #282828      #282828      #d79921
+                inactive_workspace   #282828      #282828      #ebdbb2
+                urgent_workspace     #282828      #282828      #cc241d
         }
 }
 
