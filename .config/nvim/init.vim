@@ -31,6 +31,8 @@ call plug#end()
 " colors and theme
 syntax on
 
+set t_Co=256
+
 set background=dark
 
 let g:gruvbox_italic=1
