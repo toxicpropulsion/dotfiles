@@ -207,6 +207,6 @@ hide_edge_borders both
 # default_border none 
 
 exec --no-startup-id /usr/bin/xfce4-power-manager
-exec --no-startup-id setxkbmap us,ru -option "grp:alt_shift_toggle"
+exec --no-startup-id "setxkbmap us,ru -option \\"grp:alt_shift_toggle\\""
 exec --no-startup-id xsetroot -solid "#282828"
 exec urxvt
