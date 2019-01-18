@@ -207,6 +207,12 @@ bar {
         }
 }
 
+# Screenshot
+# - Fullscreen:
+bindsym --release $mod+Print exec --no-startup-id scrot -q 100 ~/shots/'%Y-%m-%d_%H:%M:%S'.jpg && notify-send -t 2 'Screenshot'
+# - Select region:
+bindsym --release $mod+Shift+s exec --no-startup-id scrot -s -q 100 ~/shots/'%Y-%m-%d_%H:%M:%S'.jpg && notify-send -t 2 'Screenshot'
+
 bindsym $mod+shift+x exec i3lock
 
 hide_edge_borders both
